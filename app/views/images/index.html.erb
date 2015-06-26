@@ -1,0 +1,14 @@
+<header>
+  <h1 id="name">PicGur</h1>
+</header>
+
+<%= link_to "Add a new image!", new_image_path, :class => 'btn green topright' %>
+
+<ul class="pictures">
+  <% @images.each do |image| %>
+  <li>
+    <a href="/images/<%= image.id %>"><%= image.title %></a>
+    posted by <em><%= image.username %></em>
+  </li>
+  <% end %>
+</ul>
