@@ -1,7 +1,3 @@
-<header>
-  <h1>Update Picture!</h1>
-</header>
-
 <%= form_for @image do |f| %>
 
   <div class="field textbox">
@@ -24,10 +20,11 @@
     <%= f.text_area :description, placeholder: "Describe the image." %>
   </div>
 
-  <div class="field">
-    <%= f.button "Update picture!", :class => "blue" %>
+  <div class="field buttons">
+    <%= f.button 'Save Changes', :class => 'blue' %>
+
+    <%= link_to "Delete", image_path(@image), :class => 'btn red', method: :delete, data: {confirm: "Are you sure you want to delete this picgur?"}  %>
   </div>
 
 <% end %>
 
-<%= link_to "Delete", image_path(@image), method: :delete, data: {confirm: "Are you sure you want to delete this picture?"}  %>

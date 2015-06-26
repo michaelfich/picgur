@@ -1,1 +1,16 @@
-<img src="<%= @image.url %>" alt="<%= @image.description %>">
+<article class="description">
+  <%= link_to 'Edit', edit_image_path(@image), :class => 'btn blue' %>
+  <%= link_to 'Delete', image_path(@image), :class => 'btn red', method: :delete, data: {confirm: "Are you sure you want to delete this picgur?"} %>
+
+  <section>
+    <p>Uploaded by <em><%= @image.username %></em></p>
+    <p>
+      <strong>Description:</strong><br>
+      <%= @image.description %>
+    </p>
+  </section>
+</article>
+
+<div class="image">
+  <img src="<%= @image.url %>" alt="<%= @image.description %>">
+</div>

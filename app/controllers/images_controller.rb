@@ -5,6 +5,7 @@ class ImagesController < ApplicationController
   end
 
   def new
+    @title = "New Image"
     @image = Image.new
   end
 
@@ -21,11 +22,23 @@ class ImagesController < ApplicationController
   def show
     id = params[:id]
     @image = Image.find(id)
+    @title = @image.title
   end
 
   def edit
     id = params[:id]
     @image = Image.find(id)
+  end
+
+  def update
+    id = params[:id]
+    @image = Image.find(id)
+    @image.update_attributes(params_filter)
+    if @image.save
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
 
   def destroy

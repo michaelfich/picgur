@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="container">
-    <%= yield %>
+  <header class="outer_container">
+    <header class="inner_container">
+      <h1><%= @title || "Picgur" %></h1>
+      <nav class="topright">
+        <%= link_to 'Home', root_path, :class => 'btn green' %>
+        <%= link_to 'New Image', new_image_path, :class => 'btn green' %>
+      </nav>
+    </header>
+  </header>
+  <div class="outer_container">
+    <div class="inner_container">
+      <%= yield %>
+    </div>
   </div>
 </body>
 </html>

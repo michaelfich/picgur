@@ -1,12 +1,3 @@
-<header>
-  <h1 id="name">PicGur</h1>
-</header>
-
-<nav class="topright">
-  <%= link_to 'Home', root_path, :class => 'btn green' %>
-  <%= link_to 'New Image', new_image_path, :class => 'btn green' %>
-</nav>
-
 <ul class="pictures">
   <% @images.each do |image| %>
   <li>
