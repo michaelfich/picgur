@@ -1,8 +1,13 @@
 <ul class="pictures">
   <% @images.each do |image| %>
   <li>
-    <a href="/images/<%= image.id %>"><%= image.title %></a>
-    posted by <em><%= image.username %></em>
+    <a href="/images/<%= image.id %>">
+      <div class="thumbnail">
+        <%= image_tag image.url, alt: image.title %>
+      </div>
+
+      <%= image.title %>
+    </a>
   </li>
   <% end %>
 </ul>
