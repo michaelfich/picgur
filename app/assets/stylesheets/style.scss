@@ -1,0 +1,186 @@
+// Place all the styles related to the images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.outer_container {
+  width: 100%;
+}
+
+.inner_container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 2em 0;
+  overflow: auto;
+  position: relative;
+}
+
+header.outer_container {
+  border-bottom: 1px solid #ddd;
+  background-image: image-url("paisley.png");
+}
+
+h1 {
+  display: inline-block;
+  font-size: 4em;
+  letter-spacing: -2px;
+  margin: 0;
+  padding: 60px 0 0;
+  color: #555;
+  text-shadow: 2px 2px 3px #ccc;
+}
+
+a.btn,
+button {
+  display: inline-block;
+  padding: .75em 1.5em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-decoration: none;
+  border-radius: 2px;
+  color: #ffffff;
+  border: 0;
+  outline: none;
+}
+
+a.btn.green,
+button.green {
+  background: #4D9A6A;
+}
+
+a.btn.blue,
+button.blue {
+  background: #4E648E;
+}
+
+a.btn.red,
+button.red {
+  background: #D3696C;
+}
+
+.topright {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+div.field {
+  margin: 0.25em 0;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin: 0;
+  float: left;
+}
+
+div.textbox {
+  width: 320px;
+}
+
+div.textarea {
+  width: 960px;
+}
+
+div.field label {
+  display: block;
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+div.textbox input,
+div.textarea textarea {
+  padding: 10px;
+  margin: 0 4px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 12pt;
+}
+
+div.textbox input:focus,
+div.textarea textarea:focus {
+  border: 1px solid #555;
+}
+
+div.textbox input {
+  width: 290px;
+}
+
+div.textarea textarea {
+  width: 930px;
+  height: 160px;
+  resize: none;
+}
+
+div.field.buttons {
+  margin: 0 0 0 4px;
+  padding: 0;
+}
+
+article.description {
+  box-sizing: border-box;
+  width: 540px;
+  float: left;
+}
+
+div.image {
+  box-sizing: border-box;
+  width: 420px;
+  float: right;
+  text-align: right;
+}
+
+div.image img {
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 420px;
+  border: 1px solid #ccc;
+}
+
+ul.pictures {
+  list-style: none;
+  padding: 0;
+}
+
+ul.pictures li {
+  padding: 4px 0;
+  overflow: auto;
+  line-height: 50px;
+}
+
+ul li a {
+  padding: 7px;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #666;
+  border-radius: 100px;
+}
+
+ul li a:hover {
+  background: #BCC7F2;
+  color: #222;
+  box-shadow: 0 2px 0 #6473A8;
+}
+
+ul.pictures li div.thumbnail {
+  float: left;
+  margin-right: 8px;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+ul.pictures li div.thumbnail img {
+  max-height: 100%;
+  margin: 0 auto;
+}
+
