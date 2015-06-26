@@ -20,7 +20,7 @@
     <%= f.text_area :description, placeholder: "Describe the image." %>
   </div>
 
-  <div class="field buttons">
+  <div class="field button">
     <%= f.button 'Save Changes', :class => 'blue' %>
 
     <%= link_to "Delete", image_path(@image), :class => 'btn red', method: :delete, data: {confirm: "Are you sure you want to delete this picgur?"}  %>

@@ -23,6 +23,8 @@ class ImagesController < ApplicationController
     id = params[:id]
     @image = Image.find(id)
     @title = @image.title
+
+    redirect_to images_path if @image.deleted
   end
 
   def edit
@@ -46,7 +48,7 @@ class ImagesController < ApplicationController
     @image = Image.find(id)
     @image.deleted = true
     @image.save
-    redirect_to image_path
+    redirect_to images_path
   end
 
   private
