@@ -78,7 +78,7 @@ button.red {
 
 .topright {
   position: absolute;
-  top: 20px;
+  top: 40px;
   right: 0;
 }
 
@@ -100,9 +100,8 @@ div.textarea {
 
 div.field label {
   display: block;
-  /*text-transform: uppercase;*/
   font-weight: bold;
-  margin: 0 4px; /* 0 14px;*/
+  margin: 0 4px;
 }
 
 div.textbox input,

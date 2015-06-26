@@ -25,7 +25,9 @@
   </div>
 
   <div class="field">
-    <%= f.button "Update picture!", :class => "blue"  %>
+    <%= f.button "Update picture!", :class => "blue" %>
   </div>
 
 <% end %>
+
+<%= link_to "Delete", image_path(@image), method: :delete, data: {confirm: "Are you sure you want to delete this picture?"}  %>

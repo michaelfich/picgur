@@ -1,7 +1,7 @@
 class ImagesController < ApplicationController
 
   def index
-    @images = Image.all
+    @images = Image.where(deleted: false)
   end
 
   def new
@@ -10,6 +10,7 @@ class ImagesController < ApplicationController
 
   def create
     @image = Image.new(params_filter)
+    @image.deleted = false
     if @image.save
       redirect_to @image
     else
@@ -25,6 +26,14 @@ class ImagesController < ApplicationController
   def edit
     id = params[:id]
     @image = Image.find(id)
+  end
+
+  def destroy
+    id = params[:id]
+    @image = Image.find(id)
+    @image.deleted = true
+    @image.save
+    redirect_to image_path
   end
 
   private
