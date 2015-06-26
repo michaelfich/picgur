@@ -36,7 +36,6 @@ body {
 }
 
 header.outer_container {
-  background-color: red;
   border-bottom: 1px solid #ddd;
   background-image: url('/assets/paisley.png');
 }
