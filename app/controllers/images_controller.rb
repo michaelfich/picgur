@@ -5,7 +5,7 @@ class ImagesController < ApplicationController
   end
 
   def new
-    @title = "New Image"
+    @title = "Add a New Image"
     @image = Image.new
   end
 
