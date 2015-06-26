@@ -36,13 +36,14 @@ body {
 }
 
 header.outer_container {
-  background: #eee;
-  border-bottom: 1px solid #aaa;
+  background-color: red;
+  border-bottom: 1px solid #ddd;
+  background-image: url('/assets/paisley.png');
 }
 
 h1 {
   display: inline-block;
-  font-size: 2em;
+  font-size: 4em;
   letter-spacing: -2px;
   margin: 0;
   padding: 60px 0 0;
