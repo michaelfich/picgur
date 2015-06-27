@@ -157,22 +157,22 @@ ul.pictures {
 ul.pictures li {
   padding: 4px 0;
   overflow: auto;
-  line-height: 50px;
+  line-height: 60px;
 }
 
-ul li a {
-  padding: 7px;
+ul.pictures li a {
+  // padding: 7px;
   display: block;
   text-decoration: none;
   box-sizing: border-box;
   color: #666;
   border-radius: 100px;
+  height: 60px;
 }
 
-ul li a:hover {
-  background: #BCC7F2;
+ul.pictures li a:hover {
+  background: #f6f6f6;
   color: #222;
-  box-shadow: 0 2px 0 #6473A8;
 }
 
 ul.pictures li div.thumbnail {
@@ -182,7 +182,8 @@ ul.pictures li div.thumbnail {
   width: 50px;
   height: 50px;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 100%;
+  border: 5px solid rgba(85, 85, 85, 0.2);
 }
 
 ul.pictures li div.thumbnail img {
