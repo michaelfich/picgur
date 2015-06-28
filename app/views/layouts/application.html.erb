@@ -9,7 +9,7 @@
 <body>
   <header class="outer_container">
     <header class="inner_container">
-      <h1><%= @title || "Picgur" %></h1>
+      <h<%= @heading || 2 %>><%= @title || "Picgur" %></h<%= @heading || 2 %>>
       <nav class="topright">
         <%= link_to 'Home', root_path, :class => 'btn green' %>
         <%= link_to 'New Image', new_image_path, :class => 'btn green' %>

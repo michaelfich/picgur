@@ -28,14 +28,26 @@ header.outer_container {
   background-image: image-url("paisley.png");
 }
 
-h1 {
+h1, h2 {
   display: inline-block;
-  font-size: 4em;
-  letter-spacing: -2px;
-  margin: 0;
-  padding: 60px 0 0;
   color: #555;
   text-shadow: 2px 2px 3px #ccc;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(0,0,0,0.2)
+}
+
+h1 {
+  font-size: 4.5em;
+  margin: 40px 0 0;
+  padding: 10px 20px;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 80px 0 0;
+  padding: 12px 16px;
+  letter-spacing: -1px;
 }
 
 a.btn,
@@ -165,17 +177,20 @@ ul.pictures li a {
   display: block;
   text-decoration: none;
   box-sizing: border-box;
-  color: #666;
+  color: #777;
   border-radius: 100px;
   height: 60px;
+  text-transform: uppercase;
+  font-size: 10pt;
+  font-weight: bold;
 }
 
 ul.pictures li a:hover {
   background: #f6f6f6;
-  color: #222;
+  color: rgb(78, 100, 142);
 }
 
-ul.pictures li div.thumbnail {
+ul.pictures li a div.thumbnail {
   float: left;
   margin-right: 8px;
   background-color: #ffffff;
@@ -183,11 +198,14 @@ ul.pictures li div.thumbnail {
   height: 50px;
   overflow: hidden;
   border-radius: 100%;
-  border: 5px solid rgba(85, 85, 85, 0.2);
+  border: 5px solid rgba(85, 85, 85, 0.1);
+}
+
+ul.pictures li a:hover div.thumbnail {
+  border: 5px solid rgba(78, 100, 142, 0.8);
 }
 
 ul.pictures li div.thumbnail img {
   max-height: 100%;
   margin: 0 auto;
 }
-

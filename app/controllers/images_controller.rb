@@ -1,7 +1,8 @@
 class ImagesController < ApplicationController
 
   def index
-    @images = Image.where(deleted: false)
+    @heading = 1
+    @images = Image.where(deleted: false).order(created_at: :desc)
   end
 
   def new
